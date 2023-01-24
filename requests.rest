@@ -1,0 +1,42 @@
+### Endpoint de teste
+GET http://localhost:3003/ping
+
+### Create User
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "gabriel",
+    "email": "gabriel@gmail.com",
+    "password": "gabriel123"
+}
+
+### Login
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "gabriel@gmail.com",
+    "password": "gabriel123"
+}
+
+### Create Show
+POST http://localhost:3003/shows/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjkyZjYwLTA2OGMtNGRkYi05MWRhLWU0YzFmYzcxMGNkMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NDk5Mjc3MCwiZXhwIjoxNjY1MDc5MTcwfQ.LCH2tlhrVcALZH6Ol2hzl1E4wB6XT0KD_9igu3Gn8_s
+
+{
+    "band": "Jethro Tull",
+    "startsAt": "2023/01/15"
+}
+
+### Get all Shows
+GET http://localhost:3003/shows/all
+
+### Buy Tickets
+POST http://localhost:3003/shows/ticket/e8c2aef6-016c-4063-a31b-15f9c2534af8
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjkyZjYwLTA2OGMtNGRkYi05MWRhLWU0YzFmYzcxMGNkMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NTAwNzgyNiwiZXhwIjoxNjY1MDk0MjI2fQ.Nq7Fh3qD17YRbUkezNEizuWiYsAZb580JqM5gr6Uw1E
+
+### Delete Ticket
+DELETE http://localhost:3003/shows/ticket/e8c2aef6-016c-4063-a31b-15f9c2534af8
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjkyZjYwLTA2OGMtNGRkYi05MWRhLWU0YzFmYzcxMGNkMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NTAwNzgyNiwiZXhwIjoxNjY1MDk0MjI2fQ.Nq7Fh3qD17YRbUkezNEizuWiYsAZb580JqM5gr6Uw1E
