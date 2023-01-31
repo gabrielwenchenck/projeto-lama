@@ -126,7 +126,7 @@ BCRYPT_SALT_ROUNDS = 12
 **3. Cria um novo show (protegido)**
 
 - **Método:** `POST `
-- **Caminho:** `/create`
+- **Caminho:** `/shows/create`
 - **Entrada:** `token de acesso, band, startsAt`
   **Saída:** `mensagem de show criado com sucesso e os dados do show.`
 - **Validações e regras de negócio:**
@@ -137,7 +137,7 @@ BCRYPT_SALT_ROUNDS = 12
 **4. Buscar shows**
 
 - **Método:** `GET `
-- **Caminho:** `/shows`
+- **Caminho:** `/shows/all`
 - **Entrada:** `nenhuma`
   **Saída:** `uma lista com todos os shows agendados`
 - **Validações e regras de negócio:**
@@ -146,7 +146,7 @@ BCRYPT_SALT_ROUNDS = 12
 **5. Criar reserva de ingressos (protegido)**
 
 - **Método:** `POST`
-- **Caminho:** `/shows/:id`
+- **Caminho:** `/shows/ticket/:id`
 - **Entrada:** `token de acesso, id do show a ser reservado`
   **Saída:** `mensagem de reserva realizada com sucesso`
 - **Validações e regras de negócio:**
@@ -158,7 +158,7 @@ BCRYPT_SALT_ROUNDS = 12
 **6. Remover reserva de ingressos (protegido)**
 
 - **Método:** `DELETE`
-- **Caminho:** `/shows/:id`
+- **Caminho:** `/shows/ticket/:id`
 - **Entrada:** `token de acesso, id do show a ser reservado`
   **Saída:** `mensagem de reserva removida com sucesso`
 - **Validações e regras de negócio:**
@@ -172,7 +172,8 @@ BCRYPT_SALT_ROUNDS = 12
 - [Postman](https://documenter.getpostman.com/view/21578696/2s8ZDcxJqh)
 
 ## Coverage
-![coverage_ev](https://user-images.githubusercontent.com/104534121/214390444-d584e7c7-9291-4df5-b29d-1587043e84b8.png)
+![coverage_LAMA](https://user-images.githubusercontent.com/104534121/214437563-e618a77e-5c44-4309-b74b-be6d265f2e91.png)
+
 
 ## Tecnologias Utilizadas
 
